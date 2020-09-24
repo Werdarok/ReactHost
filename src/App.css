@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Azonix";
+  src: url("fonts/AZONIX.OTF") format("opentype");
+}
+
+.mainPage {
+  background-color: rgb(13, 15, 24);
+  
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumper {
+  color: gainsboro;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Azonix";
+  margin-top: 75px;
+}
+.bar {
+  background-color: rgb(173, 151, 26);
+  min-height: 30px;
+  text-align: center;
+  font-family: "Azonix";
+}
+.bottomImages {
+  margin-bottom: 75px;
+}
+.navButton:hover,navButton:click, navButton:visited{
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+  -webkit-tap-highlight-color: white;
+}
+.overlay {
+  height: auto;
+  position: relative;
+}
+.champName {
+  position: absolute;
+  background-color: red;
+}
+.mainPageBackground {
+  height: auto;
+  background-position: center;
+}
+.logo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+

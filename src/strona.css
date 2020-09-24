@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Azonix";
+  src: url("fonts/AZONIX.OTF") format("otf");
+}
+
+.mainPage {
+  background-color: rgb(152, 182, 212);
+  background-image: url("https://www.desktopbackground.org/download/2048x1152/2013/07/06/602907_wallpapers-dark-rain-hd-theme-forest-trees-widescreen-woods-free_2560x1440_h.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumper {
+  color: gainsboro;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 75px;
+}
+.foot {
+  background-color: green;
+  min-height: 30px;
+  text-align: center;
+}
+.heading {
+  background-color: green;
+  min-height: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.space {
+
+}
