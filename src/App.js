@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { TestComponent } from './components'
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, Link, HashRouter, NavLink, MemoryRouter  } from "react-router-dom";
 import Galeria from "./Galeria"
@@ -31,7 +31,8 @@ const Home = () => (
             </NavLink>
           </nav>
      <MemoryRouter>
-        <Container>
+        <Container fluid={true}>
+        <Row noGutters={true}>
           <div className="mainPageBackground">
             <div class="col-sm-12">
                 <div class="logo">
@@ -39,12 +40,13 @@ const Home = () => (
                 </div>
             </div>
           </div>
+        </Row>
         </Container>
-        <div class="row">
+        <Row noGutters={true}>
             <div class="col-sm-12 bar">
             This website include most of the images copyrighted to Riot Games Inc. Riot-owned images outside of this category are still used under fair-use policy.
             </div>
-          </div>
+        </Row>
       </MemoryRouter>
   </div>
 );

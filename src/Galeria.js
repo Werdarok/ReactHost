@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { TestComponent } from './components'
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container, Row } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route, Link, HashRouter, NavLink, MemoryRouter  } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ChampionContainer from "./championContainer"
@@ -32,39 +32,39 @@ function Galeria() {
             </NavLink>
           </nav>
       <MemoryRouter>
-        <Container>
-            <div class="row">
+        <Container fluid={true}>
+        <Row>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/braum/" image={Braum} name="Braum"/>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/cho-gath/" image={Cho} name="Cho'Gath"/>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/heimerdinger/" image={Heimer} name="Heimerdinger"/>
-            </div>
+        </Row>
 
-            <div class="row">
+        <Row>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/kai-sa/" image={Kaisa} name="Kai'Sa"/>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/kassadin/" image={Kassadin} name="Kassadin"/>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/kindred/" image={Kindred} name="Kindred"/>
-            </div>
+        </Row>
             
             
-            <div class="row">
+        <Row>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/malzahar/" image={Malzahar} name="Malzahar"/>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/rek-sai/" image={Reksai} name="Rek'Sai"/>
               <ChampionContainer link="https://eune.leagueoflegends.com/pl-pl/champions/sett/" image={Sett} name="sett"/>
-            </div>
+        </Row>
 
             
-            <div class="row">
+        <Row>
               <ChampionContainer objectClass="overlay bottomImages" link="https://eune.leagueoflegends.com/pl-pl/champions/urgot/" image={Urgot} name="Urgot"/>
               <ChampionContainer objectClass="overlay bottomImages" link="https://eune.leagueoflegends.com/pl-pl/champions/velk-koz/" image={Velkoz} name="Vel'Koz"/>
               <ChampionContainer objectClass="overlay bottomImages" link="https://eune.leagueoflegends.com/pl-pl/champions/xerath/" image={Xerath_0} name="Xerath"/>
-            </div>
+        </Row>
 
         </Container>
-          <div class="row">
+        <Row noGutters={true}>
             <div class="col-sm-12 bar">
             This website include most of the images copyrighted to Riot Games Inc. Riot-owned images outside of this category are still used under fair-use policy.
             </div>
-          </div>
+          </Row>
       </MemoryRouter>
     </div>
   
